@@ -19,8 +19,10 @@
 
 ### Backend
 - **Framework**: [FastAPI](https://fastapi.tiangolo.com/)
-- **Database**: SQLite (via SQLAlchemy)
+- **Database**: SQLite / PostgreSQL (via SQLAlchemy)
 - **Validation**: Pydantic
+- **Data Processing**: Pandas, OpenPyXL
+- **Configuration**: Python-Dotenv
 - **Data Source**: OpenStreetMap (Overpass API) via `cafedata.py` utilities.
 
 ## 📦 Setup Instructions
@@ -33,6 +35,14 @@
 Navigate to the backend directory:
 ```bash
 cd backend
+```
+
+Create a `.env` file:
+```bash
+# .env
+DATABASE_URL=sqlite:///./cafes.db
+# OR
+# DATABASE_URL=postgresql://user:password@localhost/dbname
 ```
 
 Create a virtual environment:
@@ -59,6 +69,12 @@ python main.py
 Navigate to the frontend directory:
 ```bash
 cd frontend
+```
+
+Create a `.env` file:
+```bash
+# .env
+VITE_API_BASE_URL=http://localhost:8001
 ```
 
 Install dependencies:
