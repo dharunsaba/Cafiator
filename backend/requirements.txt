@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+httpx
+sqlalchemy
+geoalchemy2
+psycopg2-binary
+pandas
+openpyxl
+python-dotenv

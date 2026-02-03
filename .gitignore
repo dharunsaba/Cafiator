@@ -1,0 +1,40 @@
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Pytest
+.pytest_cache/
+
+# Node.js / Frontend
+node_modules/
+dist/
+build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Excel / Data
+~$*.xlsx
+
+# Artifacts/Misc
+.gemini/
